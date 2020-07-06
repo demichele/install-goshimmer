@@ -13,5 +13,5 @@ mkdir /opt/goshimmer
 cd /opt/goshimmer
 mkdir db
 chmod 0777 db
-wget https://github.com/demichele/install-goshimmer/blob/master/docker-compose.yml
+wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/docker-compose.yml
 exec bash
