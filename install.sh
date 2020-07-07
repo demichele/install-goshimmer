@@ -15,5 +15,18 @@ cd /opt/goshimmer
 mkdir db
 chmod 0777 db
 wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/docker-compose.yml
+mkdir -p prometheus/data
+chmod -R 777 prometheus
+cd prometheus
+wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/prometheus.yml
+mkdir -p grafana/provisioning/datasources grafana/provisioning/dashboards grafana/provisioning/notifiers
+mkdir -p grafana/dashboards
+cd grafana/provisioning/datasources
+wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/datasources.yaml
+cd ../dashboards
+wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/dashboards.yaml
+wget https://raw.githubusercontent.com/iotaledger/goshimmer/master/tools/monitoring/grafana/dashboards/local_dashboard.json
+cp local_dashboard.json grafana/dashboards
+chmod -R 777 grafana
 docker-compose up -d
 exec bash
