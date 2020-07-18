@@ -9,7 +9,7 @@ The following commands will download and run an install.sh script with all steps
 wget https://raw.githubusercontent.com/demichele/install-goshimmer/master/install.sh && chmod 0777 install.sh && ./install.sh
 ```
 
-Once the process finnishes you will be able to access your Node Dashboard at:
+Once the process finishes you will be able to access your Node Dashboard at:
 
 ```
 http://your-ip:8081
