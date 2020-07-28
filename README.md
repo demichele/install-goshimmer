@@ -1,6 +1,6 @@
 # Install GoShimmer for Pollen testnet using one command
 
-You can use this one line command to get a routine that will perform the installation of GoShimmer. Login to your VPS and ruin the command bellow. **This shell script has been tested in Ubuntu 20.04.** 
+You can use this one line command to get a routine that will perform the installation of GoShimmer. Login to your VPS and run the command bellow. **This shell script has been tested in Ubuntu 20.04.** 
 
 
 ## Install GoShimmer
