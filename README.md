@@ -4,6 +4,7 @@ You can use this one line command to get a routine that will perform the install
 
 
 ## Install GoShimmer
+
 The following commands will download and run an install.sh script with all steps needed to install GoShimmer according to the guide at [IOTA Foundation repository](https://github.com/iotaledger/goshimmer/wiki/Setup-up-a-GoShimmer-node-(Joining-the-pollen-testnet)). 
 
 ```
@@ -15,9 +16,11 @@ Once the process finishes you will be able to access your Node Dashboard at:
 ```
 http://your-ip:8081
 ```
-## Upgrade GoShimmer
+## Upgrade or restart GoShimmer
 
-To upgrade Goshimmer to its latest release login to your VPS and run this single line command
+GoShimmer is experimental software and might crash from time to time. This command will delete your database, get the latest GoShimmer version, install it and restart it.
+You can use it to upgrade your Goshimmer to the latest IF release or to recover your node if it fails.
+Login to your VPS and run this command:
 
 ```
 cd /opt/goshimmer && docker-compose down && rm db/* && docker-compose pull && docker-compose up -d
