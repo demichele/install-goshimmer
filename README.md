@@ -28,4 +28,3 @@ cd /opt/goshimmer && docker-compose down && rm db/* && docker-compose pull && do
 
 I will be updating the commands to reflect the installation recommended by the IOTA Foundation
 
-**Donate:** OYAZJFTXVYHJTUQQNQXGJGITRIKKWWTCHCSODIJBDWM9YTT9MDHDKOWSDGHKCRXVQRQDOHDMXIFYGLGQCXSAJ9NJIW
